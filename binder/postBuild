@@ -3,7 +3,7 @@
 set -ex
 
 folder="/srv/conda/envs/notebook/share/jupyter/kernels/xcpp14+mpi"
-mkdir -p folder
+mkdir -p $folder
 
 cat > "$folder/kernel.json" << EOF
 {
