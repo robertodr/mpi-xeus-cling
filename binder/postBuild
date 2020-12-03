@@ -17,7 +17,9 @@ cat > "$folder/kernel.json" << EOF
         "-pthread",
         "-I/srv/conda/envs/notebook/include",
         "-L/srv/conda/envs/notebook/lib",
-        "-Wl,-rpath,/srv/conda/envs/notebook/lib",
+        "-Wl",
+        "-rpath",
+        "/srv/conda/envs/notebook/lib",
         "-L/srv/conda/envs/notebook/lib",
         "-lmpi"
     ],
