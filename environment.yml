@@ -1,0 +1,8 @@
+name: mpi-xeus-cling
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - compilers
+  - mpi=*=openmpi
+  - xeus-cling
