@@ -2,17 +2,17 @@
 
 set -ex
 
-folder="/srv/conda/envs/notebook/share/jupyter/kernels/xcpp14+mpi"
+folder="/srv/conda/envs/notebook/share/jupyter/kernels/xcpp14"
 mkdir -p $folder
 
 cat > "$folder/kernel.json" << EOF
 {
-    "display_name": "C++14",
+    "display_name": "MPI&C++14",
     "argv": [
         "/srv/conda/envs/notebook/bin/xcpp",
         "-f",
         "{connection_file}",
-        "-std=c++14", 
+        "-std=c++14",
         "-I/srv/conda/envs/notebook/include",
         "-pthread",
         "-I/srv/conda/envs/notebook/include",
